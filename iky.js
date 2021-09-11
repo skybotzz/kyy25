@@ -854,6 +854,182 @@ buttons: buttons,
 }
 rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
+case 'meenu':
+                  case 'heelp':
+            gambar = fs.readFileSync('./media/Menu.jpg')
+                    l = 1
+               var nom = mek.participant
+           const statuss = public ? 'PUBLIC': 'SELF'
+		if (simple == false) inimenu = `「 *${statuss}BOT - WA* 」
+
+*INFORMASI BOT*
+
+ *WA Version : ${rzky.user.phone.wa_version}*
+ *Baterai : ${baterai.battery}*
+ *Hit Today : ${hit_today.length}*
+ *Host : Phone*
+ *MODE : ${statuss}*
+ *Jam  : ${jam} WIB*
+ 
+*Kasus Covid-19 Indonesia*  
+*Terinfeksi :* ${copid[0].kasus}
+*Kematian :* ${copid[0].kematian}
+*Sembuh :* ${copid[0].sembuh}
+  
+*◪* 𝗠𝗔𝗞𝗘𝗥
+
+⇒ ${prefix}ꜱᴛɪᴄᴋᴇʀ ʀᴇᴘʟʏ ɪᴍɢ
+⇒ ${prefix}ʀꜱᴛɪᴄᴋᴇʀ ʀᴇᴘʟʏ ɪᴍɢ
+⇒ ${prefix}ꜱᴛɪᴄᴋᴇʀɢɪꜰ ʀᴇᴘʟʏ ᴠɪᴅᴇᴏ
+⇒ ${prefix}ꜱᴛɪᴄᴋᴇʀᴡᴀ Qᴜᴇʀʏ
+⇒ ${prefix}ꜱᴛɪᴄᴋᴇʀᴡᴍ ɴᴀᴍᴀ|ᴀᴜᴛʜᴏʀ
+⇒ ${prefix}ꜱᴛɪᴄᴋᴍᴇᴍᴇ ᴛᴇᴋꜱ
+⇒ ${prefix}ꜱᴛɪᴄᴋᴍᴇᴍᴇ2 ᴛᴇᴋꜱ
+⇒ ${prefix}ꜱᴛɪᴄᴋᴍᴇᴍᴇ3 ᴛᴋꜱ ᴀᴛꜱ|ᴛᴋꜱ ʙᴡʜ
+⇒ ${prefix}ꜱᴛɪᴄᴋᴡᴀꜱᴛᴇᴅ ʀᴘʟʏ ꜱᴛᴋ
+⇒ ${prefix}ꜱᴛɪᴄᴋꜰʟɪᴘ ʀᴘʟʏ ꜱᴛᴋ
+⇒ ${prefix}ꜱᴛɪᴄᴋɴᴏʙɢ 
+⇒ ${prefix}ɴᴏʙɢ ʀᴇᴘʟʏ ɪᴍɢ
+⇒ ${prefix}ᴛᴛᴘ ᴛᴇxᴛ
+⇒ ${prefix}ᴛᴛᴘ1ᴛᴇxᴛ
+⇒ ${prefix}ᴛᴀᴋᴇ ɴᴀᴍᴀ|ᴀᴜᴛʜᴏʀ
+⇒ ${prefix}ᴇxɪꜰ ɴᴀᴍᴀ|ᴀᴜᴛʜᴏʀ
+⇒ ${prefix}ᴄᴏʟᴏɴɢ
+
+*◪* *ᴄᴏɴᴠᴇʀᴛ*
+⇒ ${prefix}ᴛᴇxᴛᴍᴀᴋᴇʀ ᴀᴛᴀꜱ|ʙᴀᴡᴀʜ
+⇒ ${prefix}ꜰᴅᴇꜰᴀᴄᴇ ᴜʀʟ|ᴛɪᴛʟᴇ|ᴅᴇꜱᴋ
+⇒ ${prefix}ꜰᴀᴋᴇ ᴜʀʟ|ᴛɪᴛʟᴇ|ᴅᴇꜱᴋ
+⇒ ${prefix}ᴛᴏɢɪꜰ ʀᴇᴘʟʏ ꜱᴛɪᴄᴋᴇʀɢɪꜰ
+⇒ ${prefix}ᴛᴏᴠɪᴅᴇᴏ ʀᴇᴘʟʏ ꜱᴛɪᴄᴋᴇʀ
+⇒ ${prefix}ᴛᴏɪᴍɢ ʀᴇᴘʟʏ ꜱᴛɪᴄᴋᴇʀ
+⇒ ${prefix}ᴛᴏɪᴍᴀɢᴇ ʀᴇᴘʟʏ ꜱᴛɪᴄᴋᴇʀ
+
+*◪* 𝗦𝗬𝗦𝗧𝗘𝗠
+⇒ ${prefix}ꜱᴛᴀᴛᴜꜱ
+⇒ ${prefix}ꜱᴇʟꜰ
+⇒ ${prefix}ᴘᴜʙʟɪᴄ
+⇒ ${prefix}ᴏɴ
+⇒ ${prefix}ᴏꜰꜰ ᴀʟᴀꜱᴀɴ
+⇒ ${prefix}ʀᴜɴᴛɪᴍᴇ
+⇒ ${prefix}ᴘɪɴɢ
+⇒ ${prefix}ᴛᴇʀᴍ
+⇒ ${prefix}ʙʟᴏᴄᴋʟɪꜱᴛ
+⇒ ${prefix}ʀᴜɴ
+⇒ ${prefix}ᴄʜᴀᴛʟɪꜱᴛ
+⇒ ${prefix}ᴊᴏɪɴ ʟɪɴᴋɢʀᴏᴜᴘ
+⇒ ${prefix}ɢᴇᴛᴘɪᴄ @ᴛᴀɢ
+⇒ ${prefix}ɢᴇᴛʙɪᴏ @ᴛᴀɢ
+
+*◪* 𝗔𝗗𝗩𝗔𝗡𝗖𝗘
+⇒ ${prefix}ʙᴄ
+⇒ ${prefix}ᴘɪɴ
+⇒ ${prefix}ᴜɴᴘɪɴ
+⇒ ${prefix}ᴀʀᴄʜɪᴠᴇ
+⇒ ${prefix}ᴜɴᴀʀᴄʜɪᴠᴇᴀʟʟ
+⇒ ${prefix}ʀᴇᴀᴅᴀʟʟ
+⇒ ${prefix}ᴜɴʀᴇᴀᴅᴀʟʟ
+⇒ ${prefix}ᴅᴇʟᴛʜɪꜱᴄʜᴀᴛ
+⇒ ${prefix}ꜱʜᴜᴛᴅᴏᴡɴ
+⇒ ${prefix}ᴊᴀᴅɪʙᴏᴛ
+⇒ ${prefix}ʀᴇꜱᴛᴀʀᴛ
+
+*◪* 𝗧𝗔𝗚
+⇒ ${prefix}ꜱᴇɴᴅᴋᴏɴᴛᴀɢ ɴᴀᴍᴀ
+⇒ ${prefix}ʜɪᴅᴇᴛᴀɢ ᴛᴇxᴛ
+⇒ ${prefix}ꜱᴛᴄᴛᴀɢ ᴛᴀɢ ꜱᴛᴄ
+⇒ ${prefix}ɪᴍɢᴛᴀɢ ᴛᴀɢ ɪᴍɢ
+⇒ ${prefix}ᴋᴏɴᴛᴀᴋ ɴᴀᴍᴀ|ɴᴏᴍᴏʀ
+⇒ ${prefix}ᴋᴏɴᴛᴀɢ ɴᴀᴍᴀ|ɴᴏᴍᴏʀ
+
+*◪* 𝗖𝗥𝗘𝗔𝗧𝗢𝗥
+⇒ ${prefix}ꜱᴇᴛꜰᴀᴋᴇ
+⇒ ${prefix}ꜱᴇᴛᴍᴇɴᴜ
+⇒ ${prefix}ꜱᴇᴛᴛʜᴜᴍʙ
+⇒ ${prefix}ꜱᴇᴛᴛʜᴜᴍʙᴍᴇɴᴜ
+⇒ ${prefix}ꜱᴇᴛʀᴇᴘʟʏ
+⇒ ${prefix}ꜱᴇᴛᴍᴀᴛᴀᴜᴀɴɢ
+⇒ ${prefix}ꜱᴇᴛʜᴀʀɢᴀ
+⇒ ${prefix}ꜱᴇᴛʙᴏᴅʏᴍᴇɴᴜ
+⇒ ${prefix}ꜱᴇᴛᴡᴇʟᴄᴏᴍᴇ
+⇒ ${prefix}ꜱᴇᴛʟᴇᴀᴠᴇ
+⇒ ${prefix}ꜱᴇᴛᴘʀᴏᴍᴏᴛᴇ
+⇒ ${prefix}ꜱᴇᴛᴅᴇᴍᴏᴛᴇ
+
+*◪* 𝗨𝗣𝗦𝗪
+⇒ ${prefix}ᴜᴘꜱᴡᴛᴇxᴛ
+⇒ ${prefix}ᴜᴘꜱᴡɪᴍɢ
+⇒ ${prefix}ᴜᴘꜱᴡᴠɪᴅᴇᴏ
+
+*◪* 𝗚𝗥𝗢𝗨𝗣
+⇒ ${prefix}ᴡᴇʟᴄᴏᴍᴇ 1/0
+⇒ ${prefix}ʟɪɴᴋɢʀᴏᴜᴘ
+⇒ ${prefix}ɢʀᴏᴜᴘ ᴛᴜᴛᴜᴘ/ʙᴜᴋᴀ
+⇒ ${prefix}ᴀᴅᴅ 6281xxx
+⇒ ${prefix}ᴋɪᴄᴋ @ᴛᴀɢ
+⇒ ${prefix}ᴘʀᴏᴍᴏᴛᴇ @ᴛᴀɢ
+⇒ ${prefix}ᴅᴇᴍᴏᴛᴇ @ᴛᴀɢᴀᴅᴍɪɴ
+⇒ ${prefix}ᴅᴇᴍᴏᴛᴇᴀʟʟ
+⇒ ${prefix}ᴇᴅᴏᴛᴇɴꜱᴇɪ @ᴛᴀɢ
+⇒ ${prefix}ʟɪꜱᴛᴀᴅᴍɪɴ
+⇒ ${prefix}ɢᴄɪɴɢꜰᴏ
+⇒ ${prefix}ᴏɴʟɪɴᴇ
+⇒ ${prefix}ɪɴꜰᴏᴀʟʟ
+⇒ ${prefix}ɴᴏᴛɪꜰ
+⇒ ${prefix}ʟᴇᴀᴠᴇ
+
+*◪* *KHUSUS OWNER*
+⇒ ${prefix}ᴀᴅᴅꜱᴛɪᴋ ᴏᴘᴛɪᴏɴᴀʟ
+⇒ ${prefix}ᴀᴅɪᴍɢ ᴏᴘᴛɪᴏɴᴀʟ
+⇒ ${prefix}ᴀᴅᴅᴠɪᴅ ᴏᴘᴛɪᴏɴᴀʟ
+⇒ ${prefix}ᴀᴅᴅᴠɴ ᴏᴘᴛɪᴏɴᴀʟ
+⇒ ${prefix}ɢᴇᴛꜱᴛɪᴋ Qᴜᴇʀʏ
+⇒ ${prefix}ɢᴇᴛɪᴍɢ Qᴜᴇʀʏ
+⇒ ${prefix}ɢᴇᴛᴠɪᴅ Qᴜᴇʀʏ
+⇒ ${prefix}ɢᴇᴛᴠɴ Qᴜᴇʀʏ
+⇒ ${prefix}ʟɪꜱᴛꜱᴛɪᴄᴋ
+⇒ ${prefix}ʟɪꜱᴛɪᴍɢ
+⇒ ${prefix}ʟɪꜱᴛᴠɪᴅ
+⇒ ${prefix}ʟɪꜱᴛᴠɴ
+
+*◪* 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗
+⇒ ${prefix}ᴘʟᴀʏ Qᴜᴇʀʏ
+⇒ ${prefix}ᴘʟᴀʏ2 Qᴜᴇʀʏ
+⇒ ${prefix}ꜱᴇᴀʀᴄʜᴍᴜꜱɪᴄ ᴛᴀɢ ᴀᴜᴅɪᴏ
+⇒ ${prefix}ɪɢ2ᴜʀʟ
+⇒ ${prefix}ꜰʙ ᴜʀʟ
+⇒ ${prefix}ᴛɪᴋᴛᴏᴋ ᴜʀʟ
+⇒ ${prefix}ᴛɪᴋᴛᴏᴋɴᴏᴡᴍ ᴜʀʟ
+⇒ ${prefix}ʏᴛᴍᴘ3 ᴜʀʟ
+⇒ ${prefix}ʏᴛᴍᴘ4 ᴜʀʟ
+
+*◪*  *ᴛᴀᴍʙᴀʜᴀɴ*
+⇒ ${prefix}ɪɢ
+⇒ ${prefix}ᴏᴄʀ
+⇒ ${prefix}ɢɪᴍᴀɢᴇ
+⇒ ${prefix}ɢᴏᴏɢʟᴇꜱᴇᴀʀᴄʜ
+⇒ ${prefix}ʏᴛꜱ
+⇒ ${prefix}ᴍᴀᴋᴇʀ
+⇒ ${prefix}loli
+⇒ ${prefix}tahta
+⇒ ${prefix}nulis
+⇒ ${prefix}igstalk
+⇒ ${prefix}ghstalk
+⇒ ${prefix}tiktokstalk
+
+
+*◪*ᴛq ᴛq*
+⇒ ᴍʜᴀɴᴋʙᴀʀʙᴀʀ
+⇒ ɢᴀʟᴀɴɢ ʏᴀɴᴜᴀʀ
+⇒ ᴢɪᴛꜱʀᴀᴀ
+⇒ ᴀɴᴜ ᴛᴇᴀᴍ
+
+`
+ 
+if (simple == true) inimenu = `「 *${statuss}BOT - WA* 」`
+
+rzky.sendMessage(from, gambar, image,{quoted:freply, caption:inimenu})
+break
                    case 'menu':
         case 'help':
   if (!isRegister) return reply(mess.regits) 
