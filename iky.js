@@ -1050,6 +1050,7 @@ break
    {buttonId: `${prefix}command`, buttonText: {displayText: 'COMMAND'}, type: 1},
    {buttonId: `${prefix}rules`, buttonText: {displayText: 'RULES'}, type: 1},
   {buttonId: `${prefix}owner`, buttonText: {displayText: 'OWNER'}, type: 1},
+   {buttonId: `${prefix}allmenu`, buttonText: {displayText: 'ALL MENU'}, type: 1}
 ]
                imageMsg = (await rzky.prepareMessageMedia(fs.readFileSync(`./media/Menu.jpg`), 'imageMessage', { thumbnail:Bfake, contextInfo:{forwardingScore: 989, isForwarded: true }})).imageMessage
 
@@ -1088,7 +1089,7 @@ break
 ┗━⬣ 𝐬𝐞𝐰𝐚𝐛𝐨𝐭
 
 
- La tahzan innallaha ma'ana
+ NOTE : JIKA COMMAND TIDAK MUNCUL SILAHKAN METIK !Allmenu  
 
  
  【﻿ＧＯＬＢＥＺＩＣ　ＢＯＴ】`, imageMessage: imageMsg,
@@ -1745,6 +1746,228 @@ Silahkan pilih tabel di bawah ini , jika tidak support silahkan ketik ! command 
                prep = await rzky.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply, contextInfo:{ forwardingScore:508, isForwarded:true, mentionedJid:[senderr]}})
               rzky.relayWAMessage(prep)
                break
+               
+               case 'allmenu': 
+                 if (!isRegister) return reply(mess.regits) 
+              groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
+              privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+              ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+              charger = `${charging ? 'lagi dicas' : 'ga dicas'}`
+              uptime = process.uptime();
+              timestampe = speed();
+              totalChat = await rzky.chats.all()
+              latensie = speed() - timestampe
+              total = math(`${groups.length}*${privat.length}`)
+              
+        menu =`【﻿ＧＯＬＢＥＺＩＣ　ＢＯＴ】 `
+
+               buttons =  [
+    {buttonId: `${prefix}rules`, buttonText: {displayText: 'S&K'}, type: 1},
+]
+               imageMsg = (await rzky.prepareMessageMedia(fs.readFileSync(`./media/Menu.jpg`), 'imageMessage', { thumbnail:Bfake, contextInfo:{forwardingScore: 989, isForwarded: true }})).imageMessage
+
+               buttonsMessage = {
+               contentText: `${menu}`,
+               footerText:  `   
+▢ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : *${groups.length}*
+▢ Pr𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : *${privat.length}*
+▢ *Baterai* : ${baterai}% ${charger}
+▢ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : *${totalChat.length}*
+▢ 𝐒𝐩𝐞𝐞𝐝 : *${latensie.toFixed(4)} _Second_*
+▢ 𝐀𝐜𝐭𝐢𝐯𝐞 : *${runtime(process.uptime())}*
+▢ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : *${os.platform()}*
+
+
+ 🕹️ GAME-MENU 🕹️
+ 
+⚙️ ${prefix}slot
+⚙️ ${prefix}limitgame
+⚙️ ${prefix}gelud @tag
+⚙️ ${prefix}tictactoe @tag
+⚙️ ${prefix}siapaaku
+⚙️ ${prefix}family100
+⚙️ ${prefix}kuismath
+⚙️ ${prefix}asahotak
+⚙️ ${prefix}tebaklirik
+⚙️ ${prefix}tebaklagu
+⚙️ ${prefix}tebakkata
+⚙️ ${prefix}susunkata
+⚙️ ${prefix}kimiakuis
+⚙️ ${prefix}caklontong
+⚙️ ${prefix}tebakjenaka
+⚙️ ${prefix}tebakanime
+⚙️ ${prefix}tebaktebakan
+⚙️ ${prefix}tebakgambar
+⚙️ ${prefix}tebakbendera
+⚙️ ${prefix}suit *batu/kertas/gunting*
+
+
+
+   # FUN - MENU
+   
+⚙️ ${prefix}mining
+⚙️ ${prefix}togel
+⚙️ ${prefix}cekwatak
+⚙️ ${prefix}cekmati [nama]
+⚙️ ${prefix}wangy [nama]
+⚙️ ${prefix}citacita
+⚙️ ${prefix}toxic
+⚙️ ${prefix}truth
+⚙️ ${prefix}dare
+⚙️ ${prefix}apakah
+⚙️ ${prefix}bisakah
+⚙️ ${prefix}kapankah
+⚙️ ${prefix}rate
+⚙️ ${prefix}jadian
+⚙️ ${prefix}cantik
+⚙️ ${prefix}ganteng
+⚙️ ${prefix}beban
+⚙️ ${prefix}babi
+⚙️ ${prefix}cekganteng
+⚙️ ${prefix}cekcantik
+
+
+  #  OTHER-MENU 
+
+⚙️ ${prefix}brainly *query*
+⚙️ ${prefix}shopee *product*
+⚙️ ${prefix}playstore *query*
+⚙️ ${prefix}ssweb *query*
+⚙️ ${prefix}google *query*
+⚙️ ${prefix}image *query*
+⚙️ ${prefix}pinterest *query*
+⚙️ ${prefix}nulis *teks*
+⚙️ ${prefix}iguser *ussername*
+⚙️ ${prefix}igstalk *username*
+⚙️ ${prefix}githubstalk *username*
+⚙️ ${prefix}tiktokstalk *ussername*
+⚙️ ${prefix}img2url *reply foto*
+⚙️ ${prefix}ytsearch *query*
+
+
+
+  # STICKER-MENU
+
+⚙️ ${prefix}dadu
+⚙️ ${prefix}doge
+⚙️ ${prefix}toimg
+⚙️ ${prefix}patrick
+⚙️ ${prefix}garwgura
+⚙️ ${prefix}ttg *teks*
+⚙️ ${prefix}attp *teks*
+⚙️ ${prefix}stickeranime
+⚙️ ${prefix}semoji *emoji*
+⚙️ ${prefix}sticker *reply foto/video*
+⚙️ ${prefix}smeme *teks|teks*
+⚙️ ${prefix}swm *pack|author*
+⚙️ ${prefix}take *pack|author* 
+⚙️ ${prefix}tovideo *reply sgif*
+
+
+   # WIBU-MENU
+   
+⚙️ ${prefix}loli
+⚙️ ${prefix}manga
+⚙️ ${prefix}anime 
+⚙️ ${prefix}lolivideo
+⚙️ ${prefix}husbu
+⚙️ ${prefix}waifu
+⚙️ ${prefix}milf
+⚙️ ${prefix}neko
+⚙️ ${prefix}kanna
+⚙️ ${prefix}sagiri
+⚙️ ${prefix}hentai
+⚙️ ${prefix}cosplay
+⚙️ ${prefix}wallnime
+⚙️ ${prefix}kusonime
+⚙️ ${prefix}megumin
+⚙️ ${prefix}otakudesu
+⚙️ ${prefix}doujindesu
+⚙️ ${prefix}storyanime
+⚙️ ${prefix}nakanomiku
+⚙️ ${prefix}nakanonino
+⚙️ ${prefix}nakanoitsuki
+⚙️ ${prefix}otakuongoing
+⚙️ ${prefix}nhentai *code*
+⚙️ ${prefix}nekopoi *link*
+⚙️ ${prefix}nekopoi3d
+⚙️ ${prefix}nekopoicosplay
+⚙️ ${prefix}nekopoisearch
+
+
+  # OWNER-MENU
+
+⚙️ ${prefix}bc *teks*
+⚙️ ${prefix}term
+⚙️ ${prefix}eval
+⚙️ ${prefix}reset
+⚙️ ${prefix}clearall
+⚙️ ${prefix}leaveall
+⚙️ ${prefix}join *link gc*
+⚙️ ${prefix}shutdown
+⚙️ ${prefix}getquoted
+⚙️ ${prefix}addupdate *fiturnya*
+⚙️ ${prefix}exif *nama|author*
+⚙️ ${prefix}sewa add/del *waktunya*
+⚙️ ${prefix}premium add @tag|nomor
+⚙️ ${prefix}premium del @tag|nomor
+
+
+  # GROUP-MENU
+
+⚙️ ${prefix}groupsetting
+⚙️ ${prefix}afk *alasan*
+⚙️ ${prefix}ceksewa
+⚙️ ${prefix}kickall
+⚙️ ${prefix}infogrup
+⚙️ ${prefix}promote
+⚙️ ${prefix}demote
+⚙️ ${prefix}listonline
+⚙️ ${prefix}tagall *teks*
+⚙️ ${prefix}leave
+⚙️ ${prefix}kick *reply*
+⚙️ ${prefix}add *+62xxxxxx*
+⚙️ ${prefix}setgrupname
+⚙️ ${prefix}setppgrup
+⚙️ ${prefix}setdesc
+⚙️ ${prefix}sider *reply chat bot*
+⚙️ ${prefix}hidetag *teks/reply teks*
+
+
+  ⬇️DOWNLOAD-MENU⬇️
+
+⚙️ ${prefix}fb 
+⚙️ ${prefix}igdl 
+⚙️ ${prefix}igdl2 
+⚙️ ${prefix}twitter 
+⚙️ ${prefix}tiktok 
+⚙️ ${prefix}play 
+⚙️ ${prefix}ythd 
+⚙️ ${prefix}ytmp3 
+⚙️ ${prefix}ytmp4 
+⚙️ ${prefix}soundcloud 
+⚙️ ${prefix}tiktoknowm 
+⚙️ ${prefix}tiktokaudio
+⚙️ ${prefix}mediafire 
+⚙️ ${prefix}nhentaipdf *code*
+
+
+ La tahzan innallaha ma'ana
+
+ 【﻿ＧＯＬＢＥＺＩＣ　ＢＯＴ】`, imageMessage: imageMsg,
+               buttons: buttons,
+               headerType: 4
+}
+
+
+               prep = await rzky.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply, contextInfo:{ forwardingScore:508, isForwarded:true, mentionedJid:[senderr]}})
+              rzky.relayWAMessage(prep)
+               break
+               
+
+
+
+               
    case 'command':
    if (!isRegister) return reply(mess.regits) 
                list = []
