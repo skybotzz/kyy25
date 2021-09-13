@@ -90,7 +90,6 @@ let _level = JSON.parse(fs.readFileSync('./database/user/level.json'))
 let _uang = JSON.parse(fs.readFileSync('./database/user/uang.json'))
 let glimit = JSON.parse(fs.readFileSync('./database/user/glimit.json'));
 let antilink = JSON.parse(fs.readFileSync('./database/group/antilink.json'));
-let antilenk= JSON.parse(fs.readFileSync('./lib/antilink.json'))
 let mute = JSON.parse(fs.readFileSync('./database/group/mute.json'));
 let _update = JSON.parse(fs.readFileSync('./database/bot/update.json'))
 let sewa = JSON.parse(fs.readFileSync('./database/group/sewa.json'));
@@ -542,39 +541,16 @@ const Bfake = fs.readFileSync ('./media/image/fake.jpeg','base64')
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
 
       // Anti link
-    ///////////////    if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
-   ///////////         if (budy.match(/(https:\/\/chat.whatsapp.com)/gi)) {
-  /////////          reply(`*「 GROUP LINK DETECTOR 」*\n\nSepertinya kamu mengirimkan link grup, maaf kamu akan di kick`)
-     ////)///           rzky.groupRemove(from, [sender])
-  /////          }
-        }
-     /   
+        if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
+          if (budy.match(/(https:\/\/chat.whatsapp.com)/gi)) {
+           reply(`*「 GROUP LINK DETECTOR 」*\n\nSepertinya kamu mengirimkan link grup, maaf kamu akan di kick`)
+              rzky.groupRemove(from, [sender])
+          }
+      }
+    //
            //ANTILINK2
 
-        if (messagesC.includes("://chat.whatsapp.com/")) {
-            if (!isGroup) return
-            if (!isAntiLink) return
-            if (isGroupAdmins) return reply('karena kamu adalah admin group, bot tidak akan kick kamu')
-            rzky.updatePresence(from, Presence.composing)
-            if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
-            var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-            reply(`Link Group Terdeteksi maaf ${sender.split("@")[0]} anda akan di kick dari group 5detik lagi`)
-            setTimeout(() => {
-                rzky.groupRemove(from, [kic]).catch((e) => { reply(`*ERR:* ${e}`) })
-            }, 3000)
-            setTimeout(() => {
-                rzky.updatePresence(from, Presence.composing)
-                reply("1detik")
-            }, 2000)
-            setTimeout(() => {
-                rzky.updatePresence(from, Presence.composing)
-                reply("2detik")
-            }, 1000)
-            setTimeout(() => {
-                rzky.updatePresence(from, Presence.composing)
-                reply("3detik")
-            }, 0)
-        } 
+    
         if (itsMe){
      if(chats.toLowerCase() == `${prefix}self`){
        public = false
@@ -882,183 +858,7 @@ buttons: buttons,
 }
 rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
-case 'meenu':
-                  case 'heelp':
-            gambar = fs.readFileSync('./media/Menu.jpg')
-                    l = 1
-               var nom = mek.participant
-           const statuss = public ? 'PUBLIC': 'SELF'
-		if (simple == false) inimenu = `「 *${statuss}BOT - WA* 」
-
-*INFORMASI BOT*
-
- *WA Version : ${rzky.user.phone.wa_version}*
- *Baterai : ${baterai.battery}*
- *Hit Today : ${hit_today.length}*
- *Host : Phone*
- *MODE : ${statuss}*
- *Jam  : ${jam} WIB*
- 
-*Kasus Covid-19 Indonesia*  
-*Terinfeksi :* ${copid[0].kasus}
-*Kematian :* ${copid[0].kematian}
-*Sembuh :* ${copid[0].sembuh}
-  
-*◪* 𝗠𝗔𝗞𝗘𝗥
-
-⇒ ${prefix}ꜱᴛɪᴄᴋᴇʀ ʀᴇᴘʟʏ ɪᴍɢ
-⇒ ${prefix}ʀꜱᴛɪᴄᴋᴇʀ ʀᴇᴘʟʏ ɪᴍɢ
-⇒ ${prefix}ꜱᴛɪᴄᴋᴇʀɢɪꜰ ʀᴇᴘʟʏ ᴠɪᴅᴇᴏ
-⇒ ${prefix}ꜱᴛɪᴄᴋᴇʀᴡᴀ Qᴜᴇʀʏ
-⇒ ${prefix}ꜱᴛɪᴄᴋᴇʀᴡᴍ ɴᴀᴍᴀ|ᴀᴜᴛʜᴏʀ
-⇒ ${prefix}ꜱᴛɪᴄᴋᴍᴇᴍᴇ ᴛᴇᴋꜱ
-⇒ ${prefix}ꜱᴛɪᴄᴋᴍᴇᴍᴇ2 ᴛᴇᴋꜱ
-⇒ ${prefix}ꜱᴛɪᴄᴋᴍᴇᴍᴇ3 ᴛᴋꜱ ᴀᴛꜱ|ᴛᴋꜱ ʙᴡʜ
-⇒ ${prefix}ꜱᴛɪᴄᴋᴡᴀꜱᴛᴇᴅ ʀᴘʟʏ ꜱᴛᴋ
-⇒ ${prefix}ꜱᴛɪᴄᴋꜰʟɪᴘ ʀᴘʟʏ ꜱᴛᴋ
-⇒ ${prefix}ꜱᴛɪᴄᴋɴᴏʙɢ 
-⇒ ${prefix}ɴᴏʙɢ ʀᴇᴘʟʏ ɪᴍɢ
-⇒ ${prefix}ᴛᴛᴘ ᴛᴇxᴛ
-⇒ ${prefix}ᴛᴛᴘ1ᴛᴇxᴛ
-⇒ ${prefix}ᴛᴀᴋᴇ ɴᴀᴍᴀ|ᴀᴜᴛʜᴏʀ
-⇒ ${prefix}ᴇxɪꜰ ɴᴀᴍᴀ|ᴀᴜᴛʜᴏʀ
-⇒ ${prefix}ᴄᴏʟᴏɴɢ
-
-*◪* *ᴄᴏɴᴠᴇʀᴛ*
-⇒ ${prefix}ᴛᴇxᴛᴍᴀᴋᴇʀ ᴀᴛᴀꜱ|ʙᴀᴡᴀʜ
-⇒ ${prefix}ꜰᴅᴇꜰᴀᴄᴇ ᴜʀʟ|ᴛɪᴛʟᴇ|ᴅᴇꜱᴋ
-⇒ ${prefix}ꜰᴀᴋᴇ ᴜʀʟ|ᴛɪᴛʟᴇ|ᴅᴇꜱᴋ
-⇒ ${prefix}ᴛᴏɢɪꜰ ʀᴇᴘʟʏ ꜱᴛɪᴄᴋᴇʀɢɪꜰ
-⇒ ${prefix}ᴛᴏᴠɪᴅᴇᴏ ʀᴇᴘʟʏ ꜱᴛɪᴄᴋᴇʀ
-⇒ ${prefix}ᴛᴏɪᴍɢ ʀᴇᴘʟʏ ꜱᴛɪᴄᴋᴇʀ
-⇒ ${prefix}ᴛᴏɪᴍᴀɢᴇ ʀᴇᴘʟʏ ꜱᴛɪᴄᴋᴇʀ
-
-*◪* 𝗦𝗬𝗦𝗧𝗘𝗠
-⇒ ${prefix}ꜱᴛᴀᴛᴜꜱ
-⇒ ${prefix}ꜱᴇʟꜰ
-⇒ ${prefix}ᴘᴜʙʟɪᴄ
-⇒ ${prefix}ᴏɴ
-⇒ ${prefix}ᴏꜰꜰ ᴀʟᴀꜱᴀɴ
-⇒ ${prefix}ʀᴜɴᴛɪᴍᴇ
-⇒ ${prefix}ᴘɪɴɢ
-⇒ ${prefix}ᴛᴇʀᴍ
-⇒ ${prefix}ʙʟᴏᴄᴋʟɪꜱᴛ
-⇒ ${prefix}ʀᴜɴ
-⇒ ${prefix}ᴄʜᴀᴛʟɪꜱᴛ
-⇒ ${prefix}ᴊᴏɪɴ ʟɪɴᴋɢʀᴏᴜᴘ
-⇒ ${prefix}ɢᴇᴛᴘɪᴄ @ᴛᴀɢ
-⇒ ${prefix}ɢᴇᴛʙɪᴏ @ᴛᴀɢ
-
-*◪* 𝗔𝗗𝗩𝗔𝗡𝗖𝗘
-⇒ ${prefix}ʙᴄ
-⇒ ${prefix}ᴘɪɴ
-⇒ ${prefix}ᴜɴᴘɪɴ
-⇒ ${prefix}ᴀʀᴄʜɪᴠᴇ
-⇒ ${prefix}ᴜɴᴀʀᴄʜɪᴠᴇᴀʟʟ
-⇒ ${prefix}ʀᴇᴀᴅᴀʟʟ
-⇒ ${prefix}ᴜɴʀᴇᴀᴅᴀʟʟ
-⇒ ${prefix}ᴅᴇʟᴛʜɪꜱᴄʜᴀᴛ
-⇒ ${prefix}ꜱʜᴜᴛᴅᴏᴡɴ
-⇒ ${prefix}ᴊᴀᴅɪʙᴏᴛ
-⇒ ${prefix}ʀᴇꜱᴛᴀʀᴛ
-
-*◪* 𝗧𝗔𝗚
-⇒ ${prefix}ꜱᴇɴᴅᴋᴏɴᴛᴀɢ ɴᴀᴍᴀ
-⇒ ${prefix}ʜɪᴅᴇᴛᴀɢ ᴛᴇxᴛ
-⇒ ${prefix}ꜱᴛᴄᴛᴀɢ ᴛᴀɢ ꜱᴛᴄ
-⇒ ${prefix}ɪᴍɢᴛᴀɢ ᴛᴀɢ ɪᴍɢ
-⇒ ${prefix}ᴋᴏɴᴛᴀᴋ ɴᴀᴍᴀ|ɴᴏᴍᴏʀ
-⇒ ${prefix}ᴋᴏɴᴛᴀɢ ɴᴀᴍᴀ|ɴᴏᴍᴏʀ
-
-*◪* 𝗖𝗥𝗘𝗔𝗧𝗢𝗥
-⇒ ${prefix}ꜱᴇᴛꜰᴀᴋᴇ
-⇒ ${prefix}ꜱᴇᴛᴍᴇɴᴜ
-⇒ ${prefix}ꜱᴇᴛᴛʜᴜᴍʙ
-⇒ ${prefix}ꜱᴇᴛᴛʜᴜᴍʙᴍᴇɴᴜ
-⇒ ${prefix}ꜱᴇᴛʀᴇᴘʟʏ
-⇒ ${prefix}ꜱᴇᴛᴍᴀᴛᴀᴜᴀɴɢ
-⇒ ${prefix}ꜱᴇᴛʜᴀʀɢᴀ
-⇒ ${prefix}ꜱᴇᴛʙᴏᴅʏᴍᴇɴᴜ
-⇒ ${prefix}ꜱᴇᴛᴡᴇʟᴄᴏᴍᴇ
-⇒ ${prefix}ꜱᴇᴛʟᴇᴀᴠᴇ
-⇒ ${prefix}ꜱᴇᴛᴘʀᴏᴍᴏᴛᴇ
-⇒ ${prefix}ꜱᴇᴛᴅᴇᴍᴏᴛᴇ
-
-*◪* 𝗨𝗣𝗦𝗪
-⇒ ${prefix}ᴜᴘꜱᴡᴛᴇxᴛ
-⇒ ${prefix}ᴜᴘꜱᴡɪᴍɢ
-⇒ ${prefix}ᴜᴘꜱᴡᴠɪᴅᴇᴏ
-
-*◪* 𝗚𝗥𝗢𝗨𝗣
-⇒ ${prefix}ᴡᴇʟᴄᴏᴍᴇ 1/0
-⇒ ${prefix}ʟɪɴᴋɢʀᴏᴜᴘ
-⇒ ${prefix}ɢʀᴏᴜᴘ ᴛᴜᴛᴜᴘ/ʙᴜᴋᴀ
-⇒ ${prefix}ᴀᴅᴅ 6281xxx
-⇒ ${prefix}ᴋɪᴄᴋ @ᴛᴀɢ
-⇒ ${prefix}ᴘʀᴏᴍᴏᴛᴇ @ᴛᴀɢ
-⇒ ${prefix}ᴅᴇᴍᴏᴛᴇ @ᴛᴀɢᴀᴅᴍɪɴ
-⇒ ${prefix}ᴅᴇᴍᴏᴛᴇᴀʟʟ
-⇒ ${prefix}ᴇᴅᴏᴛᴇɴꜱᴇɪ @ᴛᴀɢ
-⇒ ${prefix}ʟɪꜱᴛᴀᴅᴍɪɴ
-⇒ ${prefix}ɢᴄɪɴɢꜰᴏ
-⇒ ${prefix}ᴏɴʟɪɴᴇ
-⇒ ${prefix}ɪɴꜰᴏᴀʟʟ
-⇒ ${prefix}ɴᴏᴛɪꜰ
-⇒ ${prefix}ʟᴇᴀᴠᴇ
-
-*◪* *KHUSUS OWNER*
-⇒ ${prefix}ᴀᴅᴅꜱᴛɪᴋ ᴏᴘᴛɪᴏɴᴀʟ
-⇒ ${prefix}ᴀᴅɪᴍɢ ᴏᴘᴛɪᴏɴᴀʟ
-⇒ ${prefix}ᴀᴅᴅᴠɪᴅ ᴏᴘᴛɪᴏɴᴀʟ
-⇒ ${prefix}ᴀᴅᴅᴠɴ ᴏᴘᴛɪᴏɴᴀʟ
-⇒ ${prefix}ɢᴇᴛꜱᴛɪᴋ Qᴜᴇʀʏ
-⇒ ${prefix}ɢᴇᴛɪᴍɢ Qᴜᴇʀʏ
-⇒ ${prefix}ɢᴇᴛᴠɪᴅ Qᴜᴇʀʏ
-⇒ ${prefix}ɢᴇᴛᴠɴ Qᴜᴇʀʏ
-⇒ ${prefix}ʟɪꜱᴛꜱᴛɪᴄᴋ
-⇒ ${prefix}ʟɪꜱᴛɪᴍɢ
-⇒ ${prefix}ʟɪꜱᴛᴠɪᴅ
-⇒ ${prefix}ʟɪꜱᴛᴠɴ
-
-*◪* 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗
-⇒ ${prefix}ᴘʟᴀʏ Qᴜᴇʀʏ
-⇒ ${prefix}ᴘʟᴀʏ2 Qᴜᴇʀʏ
-⇒ ${prefix}ꜱᴇᴀʀᴄʜᴍᴜꜱɪᴄ ᴛᴀɢ ᴀᴜᴅɪᴏ
-⇒ ${prefix}ɪɢ2ᴜʀʟ
-⇒ ${prefix}ꜰʙ ᴜʀʟ
-⇒ ${prefix}ᴛɪᴋᴛᴏᴋ ᴜʀʟ
-⇒ ${prefix}ᴛɪᴋᴛᴏᴋɴᴏᴡᴍ ᴜʀʟ
-⇒ ${prefix}ʏᴛᴍᴘ3 ᴜʀʟ
-⇒ ${prefix}ʏᴛᴍᴘ4 ᴜʀʟ
-
-*◪*  *ᴛᴀᴍʙᴀʜᴀɴ*
-⇒ ${prefix}ɪɢ
-⇒ ${prefix}ᴏᴄʀ
-⇒ ${prefix}ɢɪᴍᴀɢᴇ
-⇒ ${prefix}ɢᴏᴏɢʟᴇꜱᴇᴀʀᴄʜ
-⇒ ${prefix}ʏᴛꜱ
-⇒ ${prefix}ᴍᴀᴋᴇʀ
-⇒ ${prefix}loli
-⇒ ${prefix}tahta
-⇒ ${prefix}nulis
-⇒ ${prefix}igstalk
-⇒ ${prefix}ghstalk
-⇒ ${prefix}tiktokstalk
-
-
-*◪*ᴛq ᴛq*
-⇒ ᴍʜᴀɴᴋʙᴀʀʙᴀʀ
-⇒ ɢᴀʟᴀɴɢ ʏᴀɴᴜᴀʀ
-⇒ ᴢɪᴛꜱʀᴀᴀ
-⇒ ᴀɴᴜ ᴛᴇᴀᴍ
-
-`
- 
-if (simple == true) inimenu = `「 *${statuss}BOT - WA* 」`
-
-rzky.sendMessage(from, gambar, image,{quoted:freply, caption:inimenu})
-break
-                   case 'menu':
+            case 'menu':
         case 'help':
   if (!isRegister) return reply(mess.regits) 
 			 ////////  if (!isPremium) return reply(mess.only.premium) 
@@ -1078,7 +878,6 @@ break
    {buttonId: `${prefix}command`, buttonText: {displayText: 'COMMAND'}, type: 1},
    {buttonId: `${prefix}rules`, buttonText: {displayText: 'RULES'}, type: 1},
   {buttonId: `${prefix}owner`, buttonText: {displayText: 'OWNER'}, type: 1},
-   {buttonId: `${prefix}allmenu`, buttonText: {displayText: 'ALL MENU'}, type: 1}
 ]
                imageMsg = (await rzky.prepareMessageMedia(fs.readFileSync(`./media/Menu.jpg`), 'imageMessage', { thumbnail:Bfake, contextInfo:{forwardingScore: 989, isForwarded: true }})).imageMessage
 
@@ -5141,41 +4940,24 @@ case 'caripesan':  //by ANU TEAM
               reply('Pilih enable atau disable!')
 }
               break
- /////         case 'antilink':
-/////////       if (!isGroup) return reply(mess.only.group)
-///////////    if (!isBotGroupAdmins) return reply(`Bot Harus jadi Admin`)
-///////////        if (!q) return reply(`Pilih enable atau disable`)
-  ///////////       if (args[0].toLowerCase() === 'enable'){
-  //////////       if (isAntiLink) return reply(`Udah aktif`)
-  //////         antilink.push(from)
-   ///////////         fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
- ////////           reply('*「 ANTILINK DI AKTIFKAN 」*\n\nYang Ngirim Link Group Bakal Ke Kick!')
- //////////////         } else if (args[0].toLowerCase() === 'disable'){
-///////          let anu = antilink.indexOf(from)
-   //////         antilink.splice(anu, 1)
-  ///////////          fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
-     ////////     reply('*「 ANTILINK DI NONAKTIFKAN 」*')
-    ///////          } else {
-     ///////         reply(`Pilih enable atau disable`)
+       case 'antilink':
+      if (!isGroup) return reply(mess.only.group)
+    if (!isBotGroupAdmins) return reply(`Bot Harus jadi Admin`)
+      if (!q) return reply(`Pilih enable atau disable`)
+       if (args[0].toLowerCase() === 'enable'){
+       if (isAntiLink) return reply(`Udah aktif`)
+      antilink.push(from)
+          fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
+         reply('*「 ANTILINK DI AKTIFKAN 」*\n\nYang Ngirim Link Group Bakal Ke Kick!')
+       } else if (args[0].toLowerCase() === 'disable'){
+     let anu = antilink.indexOf(from)
+        antilink.splice(anu, 1)
+         fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
+      reply('*「 ANTILINK DI NONAKTIFKAN 」*')
+           } else {
+          reply(`Pilih enable atau disable`)
 }
 
-case 'antilink':
-if (!isGroup) return reply(mess.only.group)
-if (!isGroupAdmins) return reply(mess.only.admin)
-if (args.length < 1) return reply('hmm')
-if (Number(args[0]) === 1) {
-if (isAntiLink) return reply('Mode Antilink sudah aktif')
-antilenk.push(from)
-fs.writeFileSync('./lib/antilink.json', JSON.stringify(antilenk))
-reply('Sukses mengaktifkan mode anti link di group ini')
-} else if (Number(args[0]) === 0) {
-antilenk.splice(from, 1)
-fs.writeFileSync('./lib/antilink.json', JSON.stringify(antilenk))
-reply('Sukes menonaktifkan mode anti link di group ini')
-} else {
-reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
-}
-break
               break
        case 'welcome':
                if (!isGroup) return reply(mess.only.group)
