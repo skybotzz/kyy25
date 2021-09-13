@@ -1047,7 +1047,7 @@ break
         menu =`【﻿ＧＯＬＢＥＺＩＣ　ＢＯＴ】 `
 
                buttons =  [
-   {buttonId: `${prefix}command`, buttonText: {displayText: 'COMMAND'}, type: 1},
+   {buttonId: `${prefix}allmenu`, buttonText: {displayText: 'ALL MENU'}, type: 1},
    {buttonId: `${prefix}rules`, buttonText: {displayText: 'RULES'}, type: 1},
   {buttonId: `${prefix}owner`, buttonText: {displayText: 'OWNER'}, type: 1},
    {buttonId: `${prefix}allmenu`, buttonText: {displayText: 'ALL MENU'}, type: 1}
