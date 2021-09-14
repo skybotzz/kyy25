@@ -860,7 +860,7 @@ rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
             case 'menu':
         case 'help':
-  if (!isRegister) return reply(mess.regits) 
+  //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 			 ////////  if (!isPremium) return reply(mess.only.premium) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
@@ -931,7 +931,7 @@ rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                
                case 'groupmenu':
         case 'menugroup':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -995,7 +995,7 @@ rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
         
         case 'ownermenu':
         case  'menuowner':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1064,7 +1064,7 @@ rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
         
        case 'wibumenu':
         case  'menuwibu':
-      if (!isRegister) return reply(mess.regits) 
+      //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1138,7 +1138,7 @@ rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
         
        case 'downloadmenu':
         case  'menudownload':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1199,7 +1199,7 @@ rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
    
      case 'othermenu':
         case  'menuother':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1258,7 +1258,7 @@ rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                break
         case 'gamemenu':
         case  'menugame':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1323,7 +1323,7 @@ rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                break
                case 'stickermenu':
         case  'stikermenu':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net')) 
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1384,7 +1384,7 @@ rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                break
                     case 'funmenu':
         case  'menufun':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1451,7 +1451,7 @@ rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                break
    case 'infomenu':
         case  'menuinfo':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1517,7 +1517,7 @@ rzky.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                break
    case 'islammenu':
         case  'islamimenu':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1575,7 +1575,7 @@ Silahkan pilih tabel di bawah ini , jika tidak support silahkan ketik ! command 
                break
                
                case 'allmenu': 
-                 if (!isRegister) return reply(mess.regits) 
+                 //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               groups = rzky.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rzky.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1796,7 +1796,7 @@ Silahkan pilih tabel di bawah ini , jika tidak support silahkan ketik ! command 
 
                
    case 'command':
-   if (!isRegister) return reply(mess.regits) 
+   //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                list = []
                listmenu = [`groupmenu`,`islammenu`,`wibumenu`,`stickermenu`,`ownermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`owner`,`rzkygroup`,`sewabot`]
                listmenuu = [`Menu Group`,`Islam Menu`,`Wibu Menu`,`Sticker Menu`,`Owner Command`,`Game Menu`,`For Fun Menu`,`Downloader`,`Info Menu`,`Menu Lainnya`,`OwnerBot`,`Official Group`,`Rent this Bot`]
@@ -1839,7 +1839,7 @@ if (!isRegister) return reply(mess.regits)
                     reply(ini_txt)
                     break
                 case 'alquran':
-                if (!isRegister) return reply(mess.regits) 
+                //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 		 if (args.length < 1) return reply(`Example: ${prefix + command} 18 or ${prefix + command} 18/10 or ${prefix + command} 18/1-10`)
                     urls = `http://api.lolhuman.xyz/api/quran/${args[0]}?apikey=kyyganteng`
                     quran = await fetchJson(urls)
@@ -1859,14 +1859,14 @@ if (!isRegister) return reply(mess.regits)
                     reply(ini_txt)
                     break
                 case 'alquranaudio':
-                if (!isRegister) return reply(mess.regits) 
+                //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 		   if (args.length == 0) return reply(`Example: ${prefix + command} 18 or ${prefix + command} 18/10`)
                     surah = args[0]
                     ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/quran/audio/${surah}?apikey=Skyboy`)
                     rzky.sendMessage(from, ini_buffer, audio, { quoted: mek, mimetype: Mimetype.mp4Audio })
                     break
                 case 'asmaulhusna':
-                if (!isRegister) return reply(mess.regits) 
+                //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 		 get_result = await fetchJson(`http://api.lolhuman.xyz/api/asmaulhusna?apikey=kyyganteng`)
                     get_result = get_result.result
                     ini_txt = `No : ${get_result.index}\n`
@@ -1877,7 +1877,7 @@ if (!isRegister) return reply(mess.regits)
                     reply(ini_txt)
                     break
                 case 'kisahnabi':
-                if (!isRegister) return reply(mess.regits) 
+                //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 		   if (args.length == 0) return reply(`Example: ${prefix + command} Muhammad`)
                     query = args.join(" ")
                     get_result = await fetchJson(`http://api.lolhuman.xyz/api/kisahnabi/${query}?apikey=kyyganteng`)
@@ -1890,7 +1890,7 @@ if (!isRegister) return reply(mess.regits)
                     reply(ini_txt)
                     break
                 case 'jadwalsholat':
-                if (!isRegister) return reply(mess.regits) 
+                //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 		   if (args.length == 0) return reply(`Example: ${prefix + command} Yogyakarta`)
                     daerah = args.join(" ")
                     get_result = await fetchJson(`http://api.lolhuman.xyz/api/sholat/${daerah}?apikey=kyyganteng`)
@@ -1909,7 +1909,7 @@ if (!isRegister) return reply(mess.regits)
                     reply(ini_txt)
                     break
       case 'rules':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              rzky.sendMessage(from, rulesBot(prefix), MessageType.text, {quoted: mek})
              break
 
@@ -1919,7 +1919,7 @@ if (!isRegister) return reply(mess.regits)
                     ////SPORTAGE MENU
                
                case 'slow':
-               if (!isRegister) return reply(mess.regits) 
+               //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await rzky.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
@@ -2038,7 +2038,7 @@ if (!isRegister) return reply(mess.regits)
 				rzky.sendMessage(from, result, sticker)
 				break
            case 'liststicker':
-           if (!isRegister) return reply(mess.regits) 
+           //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 				teks = '*Sticker List :*\n\n'
 				for (let awokwkwk of setiker) {
 					teks += `- ${awokwkwk}\n`
@@ -2071,7 +2071,7 @@ if (!isRegister) return reply(mess.regits)
 				break
 			case 'getimage':
             case 'getimg':
-            if (!isRegister) return reply(mess.regits) 
+            //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 			   if (args.length < 1) return reply('Masukan nama yang terdaftar di list image')
 				namastc = body.slice(10)
 				buffer = fs.readFileSync(`./src/image/${namastc}.jpeg`)
@@ -2079,7 +2079,7 @@ if (!isRegister) return reply(mess.regits)
 				break
 			case 'imagelist':
 			case 'listimage':
-			 if (!isRegister) return reply(mess.regits) 
+			 //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 				teks = '*List Image :*\n\n'
 				for (let awokwkwk of imagenye) {
 					teks += `- ${awokwkwk}\n`
@@ -2089,7 +2089,7 @@ if (!isRegister) return reply(mess.regits)
 				break
 				
 			case 'addvideo':
-			 if (!isRegister) return reply(mess.regits) 
+			 //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 				if (!isQuotedVideo) return reply('Reply videonya blokk!')
 				svst = body.slice(10)
 				if (!svst) return reply('Nama videonya apa su?')
@@ -2101,7 +2101,7 @@ if (!isRegister) return reply(mess.regits)
 				rzky.sendMessage(from, `Sukses Menambahkan Video\nCek dengan cara ${prefix}listvideo`, MessageType.text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "_SelfBot OnlyDev City_", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JStw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('image/odc.jpeg')} }} }) 
 				break
 			case 'getvideo':
-			 if (!isRegister) return reply(mess.regits) 
+			 //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 			   if (args.length < 1) return reply('Masukan nama yang terdaftar di list video')
 				namastc = body.slice(10)
 				buffer = fs.readFileSync(`./src/video/${namastc}.mp4`)
@@ -2109,7 +2109,7 @@ if (!isRegister) return reply(mess.regits)
 				break
 			case 'listvideo':
 			case 'videolist':
-			 if (!isRegister) return reply(mess.regits) 
+			 //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 				teks = '*List Video :*\n\n'
 				for (let awokwkwk of videonye) {
 					teks += `- ${awokwkwk}\n`
@@ -2119,16 +2119,16 @@ if (!isRegister) return reply(mess.regits)
 				break
 				   
 //------------------< Game >------------------
-   if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
+  //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
         case 'limitgame': 
         case 'balance': 
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                const balance = atm.checkATMuser(sender, _uang)
                if (isPremium) return reply(`Limit Game : Unlimited\nBalance : Rp.${balance}`)
                textImg(`Limit Game : ${cekGLimit(sender, gcount, glimit)}/${gcount}\nBalance : Rp.${balance}`)
                break
          case 'gelud':
-          if (!isRegister) return reply(mess.regits) 
+          //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
                if (!isGroup) return reply(mess.only.group)
                if (mek.message.extendedTextMessage.contextInfo.mentionedJid > 1) return reply('Hanya bisa dengan 1 orang')
@@ -2150,7 +2150,7 @@ if (!isRegister) return reply(mess.regits)
                gameAdd(sender, glimit)
                break
         case 'delsesigelud':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                if (!isGroup) return reply(mess.only.group)
                if (fs.existsSync('./media/' + from + '.json')) {
                fs.unlinkSync('./media/' + from + '.json')
@@ -2161,7 +2161,7 @@ if (!isRegister) return reply(mess.regits)
                break
         case 'delsesittt':
         case 'resetgame':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                if (!isGroup) return reply(mess.only.group)
                if (!isTTT) return reply('Tidak Ada Permainan Di Grub Ini')
                naa = ky_ttt.filter(toek => !toek.id.includes(from)) 
@@ -2170,7 +2170,7 @@ if (!isRegister) return reply(mess.regits)
                break
         case 'tictactoe':
         case 'ttt':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (!isGroup) return reply(mess.only.group)
               if (args.length < 1) return reply('Tag Lawan Anda! ')
@@ -2194,7 +2194,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break
               
        case 'family100':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (game.isfam(from, family100)) return reply(`Masih ada soal yang belum di selesaikan`)
               anu = await axios.get(`http://api.lolhuman.xyz/api/tebak/family100?apikey=${setting.lolkey}`)
@@ -2211,7 +2211,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'tebakanime':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakanime.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebakchara?apikey=${setting.lolkey}`)
@@ -2234,7 +2234,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'tebaklagu':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaklagu.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
               get_result = await fetchJson(`https://api.xteam.xyz/game/tebaklagu?apikey=${setting.xteamkey}&id=4mFuArYRh3SO8jfffYLSER`)
@@ -2258,7 +2258,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'tebaktebakan':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaktebakan.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://api.xteam.xyz/game/tebaktebakan?APIKEY=${setting.xteamkey}`)
@@ -2281,7 +2281,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break
               //////tes
        case 'kuismath':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (kuismath.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
               get_result = await fetchJson(`https://api-yogipw.herokuapp.com/api/kuis/math`)
@@ -2302,7 +2302,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'tebakgambar':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (tebakgambar.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
               get_result = await fetchJson(`http://zekais-api.herokuapp.com/tebakgambar`)
               ini_image = get_result.soal
@@ -2323,7 +2323,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'siapaaku':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaksiapaaku.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/siapaaku?apikey=${setting.lolkey}`)
@@ -2345,7 +2345,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'tebakkata':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakata.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/kata?apikey=${setting.lolkey}`)
@@ -2366,7 +2366,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'tebaklirik':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaklirik.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/lirik?apikey=${setting.lolkey}`)
@@ -2388,7 +2388,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
       case 'tebakjenaka':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakjenaka.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/jenaka?apikey=${setting.lolkey}`)
@@ -2410,7 +2410,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'kimiakuis':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakimia.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/unsurkimia?apikey=${setting.lolkey}`)
@@ -2431,7 +2431,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'tebakbendera':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakbendera.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/bendera?apikey=${setting.lolkey}`)
@@ -2453,7 +2453,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'susunkata':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (susunkata.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/susunkata?apikey=${setting.lolkey}`)
@@ -2474,7 +2474,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'asahotak':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (asahotak.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/asahotak?apikey=${setting.lolkey}`)
@@ -2496,7 +2496,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'caklontong':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (caklontong.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/caklontong2?apikey=${setting.lolkey}`)
@@ -2518,7 +2518,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gameAdd(sender, glimit)
               break
        case 'slot':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               const sotoy = ['🍊 : 🍒 : 🍐','🍒 : ?? : 🍊','?? : 🍒 : 🍐','🍊 : 🍋 : 🔔','🔔 : 🍒 : 🍐','🔔 : 🍒 : 🍊','🍊 : 🍋 : 🔔','🍐 : 🍒 : 🍋','🍐 : 🍐 : 🍐','🍊 : 🍒 : 🍒','🔔 : 🔔 : 🍇','🍌 : 🍒 : 🔔','🍐 : 🔔 : 🔔','🍊 : 🍋 : 🍒','🍋 : 🍋 : 🍌','🔔 : 🔔 : 🍇','🔔 : 🍐 : 🍇','🔔 : 🔔 : 🔔','🍒 : 🍒 : 🍒','🍌 : 🍌 : 🍌','🍇 : ?? : 🍇']
               somtoy = sotoy[Math.floor(Math.random() * (sotoy.length))]	
               somtoyy = sotoy[Math.floor(Math.random() * (sotoy.length))]	
@@ -2538,7 +2538,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 }
               break
        case 'suit': //nyolong dari zenz
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!q) return reply(`Kirim perintah ${prefix}suit gunting / batu / kertas`)
               const userspilih = q
               if (!userspilih.match(/batu|gunting|kertas/)) return reply(`Pilih batu, kertas, gunting`)
@@ -2574,7 +2574,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break
 //------------------< Sewa >-------------------
        case 'sewa':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isGroup)return reply(mess.only.group)
               if (!isOwner) return reply(mess.only.owner)
               if (args.length < 1) return reply(`Penggunaan :\n*${prefix}sewa* add/del waktu`)
@@ -2591,7 +2591,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break
        case 'sewalist': 
        case 'listsewa':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               let txtnyee = `List Sewa\nJumlah : ${sewa.length}\n\n`
               for (let i of sewa){
               let cekvipp = ms(i.expired - Date.now())
@@ -2601,7 +2601,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break
        case 'sewacheck':
        case 'ceksewa': 
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isGroup) return reply(mess.only.group)
               if (!isSewa) return reply(`Group ini tidak terdaftar dalam list sewabot. Ketik ${prefix}sewabot untuk info lebih lanjut`)
               let cekvip = ms(_sewa.getSewaExpired(from, sewa) - Date.now())
@@ -2610,7 +2610,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break
 //------------------< Premium >-------------------
        case 'premium': 
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isOwner) return reply(mess.only.owner)
               if (args[0] === 'add') {
               if (mek.message.extendedTextMessage != undefined) {
@@ -2641,14 +2641,14 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break
        case 'premiumcheck':
        case 'cekpremium': 
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isPremium) return reply(mess.only.premium)
               const cekExp = ms(await premium.getPremiumExpired(sender, _premium) - Date.now())
               reply(`*「 PREMIUM EXPIRE 」*\n\n➸ *ID*: ${sender}\n➸ *Premium left*: ${cekExp.days} day(s) ${cekExp.hours} hour(s) ${cekExp.minutes} minute(s)`)
               break
        case 'listprem':
        case 'listpremium':          
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               let txt = `「 *PREMIUM USER LIST* 」\n\n`
               let men = [];
               for (let i of _premium){
@@ -2663,7 +2663,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'buypremium':
        case 'sewabot':
        case 'sewa':     
- if (!isRegister) return reply(mess.regits) 
+ //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               gopeynya = 'https://telegra.ph/file/5c612954dafeaeb014f59.jpg'
 
               teksnya = `*【﻿ＧＯＬＢＥＺＩＣ　ＢＯＴ】*
@@ -2716,10 +2716,10 @@ Rєgαяɗѕ : ƘƳƳ IƊ`
               mentions(teksnyee, cemde, true)
               break
 //------------------< Downloader/Search/Anime >-------------------
-   if (!isRegister) return reply(mess.regits) 
+   //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
        case 'igdl':
        case 'instagram':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               try {
               if (!isUrl(q)) return reply('Linknya?')
               reply(mess.wait)
@@ -2735,7 +2735,7 @@ Rєgαяɗѕ : ƘƳƳ IƊ`
               break 
        case 'igdl2':
        case 'instagram2':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               try {
               if (!q) return reply('Linknya?')
               reply(mess.wait)
@@ -2756,7 +2756,7 @@ Rєgαяɗѕ : ƘƳƳ IƊ`
               break
        case 'igdl3': 
        case 'instagram3':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!q) return reply('Link Yang Mana? ')
               if (!q.includes('instagram')) return reply(mess.error.Iv)
               reply(mess.wait)
@@ -2766,7 +2766,7 @@ Rєgαяɗѕ : ƘƳƳ IƊ`
               break
        case 'scplay': 
        case 'soundcloud':
-       if (!isRegister) return reply(mess.regits)  
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits)  
               if (!q) return reply('Link Yang Mana? ')
               if (!q.includes('soundcloud')) return reply(mess.error.Iv)
               reply(mess.wait)
@@ -2777,7 +2777,7 @@ Rєgαяɗѕ : ƘƳƳ IƊ`
        case 'image':
        case 'gimage':
        case 'googleimage':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (args.length < 1) return reply('Apa Yang Mau Dicari?')
               reply(mess.wait)
               teks = args.join(' ')
@@ -2792,7 +2792,7 @@ Rєgαяɗѕ : ƘƳƳ IƊ`
 }
              break
       case 'ytmp3':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
             if (!isPremium) return reply(mess.only.premium)
             if (args.length < 1) return reply('Link Nya Mana?')
             if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
@@ -2817,7 +2817,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 })
             break
      case 'ytmp4':
-      if (!isRegister) return reply(mess.regits) 
+      //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
             if (!isPremium) return reply(mess.only.premium)
             if (args.length < 1) return reply('Link Nya Mana?')
             if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
@@ -2843,7 +2843,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
             break
      case 'ytmp4hd':
      case 'ythd':
-      if (!isRegister) return reply(mess.regits) 
+      //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
             if (!isPremium) return reply(mess.only.premium)
             if (args.length === 0) return reply(`Kirim perintah */ytmp4 _linkYt_*`)
             let isLinkks2 = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
@@ -2889,7 +2889,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 }
               break
         case 'google':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!q) return reply(mess.wrongFormat)
               ss = await getBuffer(`https://api.apiflash.com/v1/urltoimage?access_key=f3fce33fa6804c0b97c897b3bd2ec7a8&url=https://google.com/search?q=${q}`)
               reply(mess.wait)
@@ -2906,7 +2906,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 })
                break
         case 'mediafire':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                if (!isPremium) return reply(mess.only.premium)
                if (args.length < 1) return reply('Link Nya Mana? ')
                if(!isUrl(args[0]) && !args[0].includes('mediafire')) return reply(mess.error.Iv)
@@ -2927,7 +2927,7 @@ _*Tunggu Proses Upload Media......*_`
              sendFileFromUrl(res[0].link, document, {mimetype: res[0].mime, filename: res[0].nama, quoted: mek})
              break
        case 'tt':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 if (!q) return reply('Linknya?')
 if (!q.includes('tiktok')) return
 reply(mess.error.Iv)
@@ -2944,7 +2944,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
        case 'ttdl':
        case 'tiktokdl':
        case 'tiktoknowm':
-           if (!isRegister) return reply(mess.regits) 
+           //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
            if (!isPremium) return reply(mess.only.premium) 
               if (!q) return reply('Linknya?')
               if (!q.includes('tiktok')) return reply(mess.error.Iv)
@@ -2960,7 +2960,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
               fs.unlinkSync(`./${sender}.jpeg`)
               break
       case 'tt1':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if (!q) return reply('Linknya?')
              if (!q.includes('tiktok')) return reply(mess.error.Iv)
              reply(mess.wait)
@@ -2970,7 +2970,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
              break
 
   case 'xnxxsearch':
-  if (!isRegister) return reply(mess.regits) 
+  //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                     if (args.length == 0) return reply(`Example: ${prefix + command} Japanese`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=kyyganteng&query=${query}`)
@@ -2987,7 +2987,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
                     reply(ini_txt)
                     break
                 case 'xnxx':
-           if (!isRegister) return reply(mess.regits) 
+           //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://www.xnxx.com/video-uy5a73b/mom_is_horny_-_brooklyn`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxx?apikey=kyyganteng&url=${query}`)
@@ -3010,7 +3010,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
                     await rzky.sendMessage(from, thumbnail, image, { quoted: lol, caption: ini_txt })
                     break
 
-             if (!isRegister) return reply(mess.regits)              
+             //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits)              
       case 'ttaudio': 
       case 'tiktokmusic': 
       case 'tiktokaudio':
@@ -3023,7 +3023,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
              break
       case 'fb':
       case 'facebook':
-      if (!isRegister) return reply(mess.regits) 
+      //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if (!q) return
              reply(mess.wait)
              try {
@@ -3035,7 +3035,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
 }
              break
       case 'twitter':
-     if (!isRegister) return reply(mess.regits) 
+     //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if (!isUrl(args[0]) && !args[0].includes('twitter.com')) return reply(mess.Iv)
              if (!q) return reply('Linknya?')
              ten = args[0]
@@ -3046,7 +3046,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
 })
              break
       case 'brainly':
-    if (!isRegister) return reply(mess.regits) 
+    //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              reply(mess.wait)
              brainly(args.join(" ")).then(res => {
              hmm = '────────────\n'
@@ -3058,7 +3058,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
 })
              break
       case 'ssweb':
-         if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
+        //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
              if (args.length == 0) return reply(`Example: ${prefix + command} https://nekopoi.care/`)
              reply(mess.wait)
              ini_link = args[0]
@@ -3066,7 +3066,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
              await rzky.sendMessage(from, ini_buffer, image, { quoted: mek })
              break
        case 'nhentaipdf':
-      if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`) 
+     //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`) 
              if (!isPremium) return reply(mess.only.premium)
              if (args.length == 0) return reply(`Usage: ${prefix + command} query\nExample: ${prefix + command} 317986`)
              if (isNaN(Number(args[0]))) return await reply(mess.wrongFormat)
@@ -3087,7 +3087,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
 }
              break
        case 'nhentai':
-      if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`) 
+     //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`) 
               if (!isPremium) return reply(mess.only.premium)
               if (args.length == 0) return reply(`Example: ${prefix + command} 344253`)
               reply(mess.wait)
@@ -3110,7 +3110,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
               reply(ini_txt)
               break
        case 'manga':
-      if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`) 
+     //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`) 
               if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
               reply(mess.wait)
               query = args.join(" ")
@@ -3141,7 +3141,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
               await rzky.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
               break
        case 'doujindesu':
-     if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)  
+    //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)  
              if (!q) return reply(mess.wrongFormat)
              reply(mess.wait)
              try {
@@ -3159,7 +3159,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
 }
              break
       case 'anime':
-  if (!isRegister) return reply(mess.regits) 
+  //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
              reply(mess.wait)
              query = args.join(" ")
@@ -3192,7 +3192,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
              await rzky.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
              break
       case 'kusonime':
-   if (!isRegister) return reply(mess.regits)   
+   //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits)   
              if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
              reply(mess.wait)
              query = args.join(" ")
@@ -3221,7 +3221,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
              await rzky.sendMessage(from, ini_buffer, image, { quoted: mek, caption: ini_txt })
              break
        case 'otakudesu':
-     if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)  
+    //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)  
               if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
               reply(mess.wait)
               query = args.join(" ")
@@ -3256,7 +3256,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
               reply(ini_txt)
               break
        case 'nekopoi':
-   if (!isRegister) return reply(mess.regits)    
+   //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits)    
               if (args.length == 0) return reply(`Example: ${prefix + command} https://nekopoi.care/isekai-harem-monogatari-episode-4-subtitle-indonesia/`)
               ini_url = args[0]
               get_result = await fetchJson(`https://api.lolhuman.xyz/api/nekopoi?apikey=${setting.lolkey}&url=${ini_url}`)
@@ -3278,7 +3278,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
               await rzky.sendMessage(from, ini_buffer, image, { quoted: mek, caption: ini_txt })
               break
        case 'nekopoisearch':
-  if (!isRegister) return reply(mess.regits)     
+  //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits)     
               if (args.length == 0) return reply(`Example: ${prefix + command} Isekai Harem`)
               query = args.join(" ")
               get_result = await fetchJson(`https://api.lolhuman.xyz/api/nekopoisearch?apikey=${setting.lolkey}&query=${query}`)
@@ -3296,7 +3296,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
        case 'sagiri':
        case 'megumin':
        case 'wallnime':
-    if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)   
+   //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)   
               reply(mess.wait)
               getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=${setting.lolkey}`).then((gambar) => {
               rzky.sendMessage(from, gambar, image, { quoted: mek, thumbnail: Buffer.alloc(0) })
@@ -3304,7 +3304,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
               break
        
        case 'hentai':
-   if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)    
+  //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)    
               getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/hentai?apikey=${setting.lolkey}`).then((gambar) => {
               rzky.sendMessage(from, gambar, image, { quoted: mek })
 }) 
@@ -3312,7 +3312,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
        case 'nakanoitsuki':
        case 'nakanorzky':
        case 'nakanomiku':
-    if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)   
+   //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)   
               reply(mess.wait)
               res = await axios.get(`https://fdciabdul.tech/api/pinterest?keyword=${command}`)
               var string = JSON.parse(JSON.stringify(res.data))
@@ -3320,7 +3320,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
               sendFileFromUrl(random, image, {quoted: mek, thumbnail: Buffer.alloc(0), caption: `*Wangy²*`})
               break
        case 'storyanime':
-     if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)  
+    //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)  
               reply(mess.wait)
               anu = await fetchJson(`https://lolhuman.herokuapp.com/api/storynime?apikey=${setting.lolkey}`)
               buffer = await getBuffer(anu.result)
@@ -3329,7 +3329,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
        case 'nekopoi3d':
        case '3dnekopoi':
        case '3dnekopoilast':
-   if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)    
+  //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)    
               reply(mess.wait)
               try {
               bsangee = await axios.get(`https://api.vhtear.com/neko3d&apikey=${setting.vhtearkey}`)
@@ -3346,7 +3346,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
                break
         case 'nekopoijav':
         case 'javnekopoi':
-    if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)    
+   //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)    
                reply(mess.wait)
                try {
                bsangce = await axios.get(`https://api.vhtear.com/nekojavlist&apikey=${setting.vhtearkey}`)
@@ -3362,7 +3362,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
                break
         case 'nekopoicosplay':
         case 'cosplaynekopoi':
-      if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)  
+     //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)  
                try {
                reply(mess.wait)
                bsangbe = await axios.get(`https://api.vhtear.com/nekojavcosplay&apikey=${setting.vhtearkey}`)
@@ -3377,7 +3377,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
 }
                break
         case 'otakuongoing':              
-      if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)  
+     //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)  
                o = await onGoing()
                console.log(o)
                ot = '*「 Ongoing Otakudesu 」*'
@@ -3388,7 +3388,7 @@ rzky.sendMessage(from,{url:'./'+memek},audio,{mimetype:'audio/mpeg'})
                rzky.sendMessage(from, buff, image, {quoted: mek, caption: ot})
                break
             case 'waifu':
-   if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)         
+  //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)         
             
 v = await fetchJson(`https://api.waifu.pics/sfw/waifu`)
 inifile = sendMediaURL(from, v.url, )
@@ -3400,7 +3400,7 @@ buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next
               rzky.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
 break
-       if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
+      //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
        case 'loli':
        case 'husbu':
        case 'milf':
@@ -3517,7 +3517,7 @@ rzky.relayWAMessage(prep)
 break
 					
           case 'lirik':
-           if (!isRegister) return reply(mess.regits) 
+           //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                if (!q) return reply(mess.wrongFormat)
                reply(mess.wait)
                lirikLagu(q).then((res) => {
@@ -3529,7 +3529,7 @@ break
 })
                break
          case 'pinterest':
-          if (!isRegister) return reply(mess.regits) 
+          //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 		   if (args.length == 0) return reply(`Example: ${prefix + command} loli`)
                     query = args.join(" ")
                  reply ('loading......')
@@ -3539,7 +3539,7 @@ break
                     rzky. sendMessage(from, ini_buffer, image, { caption: `Neh`, thumbnail: Buffer.alloc(0) })
                     break
         case 'shopee':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                try {
                if (args.length == 0) return reply(`Kirim perintah *${prefix}shopee [ query ]*\nContoh : ${prefix}shopee sepatu`)
                query = args.join(" ")
@@ -3568,7 +3568,7 @@ teks += `\`\`\`▢ Nama : ${get_data[i].name}\`\`\`
 }
               break
        case 'playstore':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               try {
               if (args.length == 0) return reply(`Kirim perintah *${prefix}playstore [ apk ]*\nContoh : ${prefix}playstore pubg`)
               query = args.join(" ")
@@ -3596,7 +3596,7 @@ teks += `\`\`\`▢ Title : ${get_result[i].title}\`\`\`
               break
        case 'yts':
        case 'ytsearch':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!q) return reply(mess.wrongFormat)
               reply(mess.wait)
               try {
@@ -3622,7 +3622,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
 }
                break
        case 'tourl':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                if ((isMedia && !mek.message.videoMessage || isQuotedImage || isQuotedVideo ) && args.length == 0) {
                reply(mess.wait)
                boij = isQuotedImage || isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
@@ -3635,7 +3635,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
                break
        case 'imgtourl':
        case 'img2url':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                reply(mess.wait) 
                var imgbb = require('imgbb-uploader')
                var encmedia  = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
@@ -3651,7 +3651,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
 })
                break
          case 'asupan': // shansekai                
-          if (!isRegister) return reply(mess.regits) 
+          //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                if (!isPremium) return reply(mess.only.premium)
                reply(mess.wait)
                asupan()
@@ -3668,7 +3668,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
                break
         case 'nulis':
         case 'tulis':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                if (args.length < 1) return reply('Yang mau di tulis apaan? Contoh : Kyy Baik hatiii')
                teks = args.join(' ')
                reply(mess.wait)
@@ -3682,7 +3682,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
                break
 //------------------< Level >-------------------
       case 'level': 
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isGroup) return reply(mess.only.group)
               if (!isLevelingOn) return await reply('Fitur leveling belum diaktifkan!')
               let userLevel = level.getLevelingLevel(sender, _level)
@@ -3700,7 +3700,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
               break
        case 'leaderboard': //Cek Leaderboard
        case 'leaderboards':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isGroup) return reply(mess.only.group)
               if (!isLevelingOn) return await reply('Fitur leveling belum diaktifkan!') 
               const resp = _level
@@ -3785,7 +3785,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
              break
       case 'stalkig':
       case 'igstalk':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if (args.length == 0) return reply(`Example: ${prefix + command} rzky.chan26`)
              reply(mess.wait)
              username = args[0]
@@ -3808,7 +3808,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
              break
       case 'stalktiktok':
       case 'tiktokstalk':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if (args.length == 0) return reply(`Example: ${prefix + command} marz.hiatus`)
              reply(mess.wait)
              stalk_toktok = args[0]
@@ -3831,7 +3831,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
               rzky.sendMessage(from, pp_tt, image, { quoted: mek, caption: ini_txt, thumbnail: Buffer.alloc(0) })
               break
        case 'iguser':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               try {
               if (args.length == 0) return reply(`Kirim perintah *${prefix}iguser [ username ]*\nContoh : ${prefix}iguser jessnolimit`)
               query = args.join(" ")
@@ -3851,7 +3851,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
 //------------------< Sticker/Tools >-------------------
 
        case 'dadu': // by CHIKAA CHANTEKKXXZZ
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               reply(mess.wait)
               dadu()
              .then(async (body) => {
@@ -3865,7 +3865,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
 })
               break
       case 'doge':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               reply(mess.wait)
               fetch('https://raw.githubusercontent.com/rashidsiregar28/data/main/anjing')
              .then(res => res.text())
@@ -3877,7 +3877,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
 )
               break
        case 'patrick':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               reply(mess.wait)
               fetch('https://raw.githubusercontent.com/rashidsiregar28/data/main/patrik')
              .then(res => res.text())
@@ -3890,7 +3890,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
               break
        case 'gura':
        case 'gawrgura':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               reply(mess.wait)
               fetch('https://raw.githubusercontent.com/rashidsiregar28/data/main/gura')
              .then(res => res.text())
@@ -3903,7 +3903,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
               break
        case 'animestick':
        case 'stickeranime':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               reply(mess.wait)
               fetch('https://raw.githubusercontent.com/rashidsiregar28/data/main/animestick')
              .then(res => res.text())
@@ -3916,7 +3916,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
               break
        case 'telesticker': 
        case 'telestiker':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!q) return reply(`Example: ${prefix + command} https://t.me/addstickers/LINE_Menhera_chan_ENG`)
               reply(mess.wait)
               ini_url = await fetchJson(`https://api.lolhuman.xyz/api/telestick?apikey=${setting.lolkey}&url=${args[0]}`)
@@ -3929,7 +3929,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
               break
        case 'semoji':
        case 'emoji':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (args.length == 0) return reply(`Example: ${prefix + command} ðŸ˜­`)
               emoji = args[0]
               try {
@@ -3941,7 +3941,7 @@ a += `\`\`\`▢ Title : ${i.title}\`\`\`
               await rzky.sendMessage(from, ini_buffer, sticker, { quoted: mek })
               break
 case 'ttp':
- if (!isRegister) return reply(mess.regits) 
+ //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 if (args.length < 1) return reply(`teksnya mana bruh?\ncontoh ${prefix} ${pushname}`)
 woy = args.join(" ")
 reply('wait....')
@@ -3949,13 +3949,13 @@ anjay = `http://zekais-api.herokuapp.com/text2png?text=${woy}&color=white`
 sendStickerUrl(from, anjay)
 break
        case 'attp':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (args.length == 0) return reply(`Example: ${prefix + command} rzky`)
               buffer = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURI(q)}`)
               rzky.sendMessage(from, buffer, sticker, { quoted: mek })
               break
        case 'ttg':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!q) return await reply(mess.wrongFormat)
               reply(mess.wait)
               sendWebp(from, `https://api.vhtear.com/textxgif?text=${q}&apikey=${setting.vhtearkey}`)
@@ -3968,7 +3968,7 @@ break
        case 'loliv':
        case 'lolivid':
        case 'lolivideo':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               reply(mess.wait)
               anu = await fetchText('https://raw.githubusercontent.com/AlvioAdjiJanuar/random/main/loli.txt')
              .then(async (body) => {
@@ -3986,8 +3986,8 @@ break
 			case 'stickergif':  
 				case 'sticker':
 				  case 'stiker':
-				 if (!isRegister) return reply(mess.regits) 
-				   if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
+				 //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
+				  //////////////////////  if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
 					     if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
             const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
             const media = await rzky.downloadAndSaveMediaMessage(encmedia)
@@ -4042,7 +4042,7 @@ break
             break               
        case 'take':
        case 'colong':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isQuotedSticker) return reply('Stiker aja om')
               encmedia = JSON.parse(JSON.strngify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
               media = await rzky.downloadAndSaveMediaMessage(encmedia)
@@ -4053,7 +4053,7 @@ break
               require('./lib/fetch.js').modStick(media, rzky, mek, from)
               break
        case 'delwm':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isQuotedSticker) return reply('Stiker aja om')
               encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
               media = await rzky.downloadAndSaveMediaMessage(encmedia)
@@ -4066,7 +4066,7 @@ break
        case 'stikerwm':
        case 'stickerwm':
        case 'swm':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               var a = arg.split("|")[0];
               var b = arg.split("|")[1];
               if (isMedia && !mek.message.videoMessage || isQuotedImage ) {
@@ -4125,7 +4125,7 @@ break
 }
               break
       case 'toimg':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isQuotedSticker) return reply('reply stickernya')
               reply(mess.wait)
               encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -4140,7 +4140,7 @@ break
 })
               break
        case 'smeme': 
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 reply('Loading.... ')
 top = arg.split('|')[0]
 bottom = arg.split('|')[1]
@@ -4161,7 +4161,7 @@ break
 
        case 'memeimg':
        case 'memegen':                    
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               top = arg.split('|')[0]
               bottom = arg.split('|')[1]
               var imgbb = require('imgbb-uploader')
@@ -4180,7 +4180,7 @@ break
 }
                break
         case 'togif':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
                reply(mess.wait)
                encmediaaa = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
@@ -4194,7 +4194,7 @@ break
 }
                break
         case 'tovideo':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
                reply(mess.wait)
                encmediaaa = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
@@ -4208,7 +4208,7 @@ break
 }
                break
         case 'tomp3':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
                if (isQuotedVideo || isQuotedAudio){
                reply(mess.wait)
                encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
@@ -4232,7 +4232,7 @@ break
               break
        case 'donate': 
        case 'donasi':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               textImg(setting.txtDonasi)
               break
        case 'sourcecode': 
@@ -4303,7 +4303,7 @@ break
              reply(`Update fitur berhasil ditambahkan ke database!`)
              break
       case 'update':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              let updateList = `*── 「 UPDATE BOT 」 ──*\n\n\n`
              for (let i of _update) {
              updateList += `࿃ *${i.replace(_update)}*\n\n`
@@ -4409,12 +4409,12 @@ break
              break
 //------------------< G R U P >-------------------
       case 'kick':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if (!isGroup) return reply(mess.only.group)
              kick(from, mentionUser)
              break
       case 'add':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) {
              entah = arg.split("|")[0]
              entah = entah.replace(new RegExp("[()+-/ +/]", "gi"), "")
@@ -4426,7 +4426,7 @@ break
 }
              break
       case 'promote':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
              if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
              entah = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -4445,7 +4445,7 @@ break
 }
              break
       case 'demote':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
              if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
              entah = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -4511,7 +4511,7 @@ break
               rzky.sendMessage(from, buff, image, {quoted: freply, caption: profile})
               break
        case 'afk': 
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isGroup) return reply(mess.only.group)
               if (isAfkOn) return reply('Woe Kalo Mau Afk Jangan Nimbrung di sini')
               const reason = q ? q : 'Nothing.'
@@ -4523,7 +4523,7 @@ break
        case 'infogrouup':
        case 'grupinfo':
        case 'groupinfo':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isGroup) return reply(mess.only.group)
               try {
               var pic = await rzky.getProfilePicture(from)
@@ -4534,7 +4534,7 @@ break
               rzky.sendMessage(from, await getBuffer(pic), image, {quoted: mek, caption: ingfo, contextInfo: {"mentionedJid": [groupMetadata.owner.replace('@c.us', '@s.whatsapp.net')]}})
               break
        case 'tagall':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isGroup) return reply(mess.only.group)
               if (!isGroupAdmins) return reply(mess.only.admin)
               let arr = [];
@@ -4563,7 +4563,7 @@ break
        case 'online':
        case 'listonline':
        case 'here':                
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if (!isGroup) return reply(`Only group`)
              try {
              let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
@@ -4574,7 +4574,7 @@ break
 }
              break
       case 'hidetag':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!isGroupAdmins) return reply(mess.only.admin)
              try {
              quotedText = mek.message.extendedTextMessage.contextInfo.quotedMessage.conversation
@@ -4584,7 +4584,7 @@ break
 }
              break
       case 'sider':
-       if (!isRegister) return reply(mess.regits) 
+       //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
              if(!isGroup) return reply(mess.only.group)
              try {
              infom = await rzky.messageInfo(from, mek.message.extendedTextMessage.contextInfo.stanzaId)
@@ -4609,30 +4609,30 @@ break
              break
 //------------------< Fun >-------------------
        case 'wangy':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!q) return
               qq = q.toUpperCase()
               awikwok = `${qq} ${qq} ${qq} ❤️ ❤️ ❤️ WANGY WANGY WANGY WANGY HU HA HU HA HU HA, aaaah baunya rambut ${qq} wangyy aku mau nyiumin aroma wangynya ${qq} AAAAAAAAH ~ Rambutnya.... aaah rambutnya juga pengen aku elus-elus ~~ AAAAAH ${qq} keluar pertama kali di anime juga manis ❤️ ❤️ ❤️ banget AAAAAAAAH ${qq} AAAAA LUCCUUUUUUUUUUUUUUU............ ${qq} AAAAAAAAAAAAAAAAAAAAGH ❤️ ❤️ ❤️apa ? ${qq} itu gak nyata ? Cuma HALU katamu ? nggak, ngak ngak ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK PEDULI BANGSAAAAAT !! GUA GAK PEDULI SAMA KENYATAAN POKOKNYA GAK PEDULI. ❤️ ❤️ ❤️ ${qq} gw ... ${qq} di laptop ngeliatin gw, ${qq} .. kamu percaya sama aku ? aaaaaaaaaaah syukur ${q} aku gak mau merelakan ${qq} aaaaaah ❤️ ❤️ ❤️ YEAAAAAAAAAAAH GUA MASIH PUNYA ${qq} SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAAH`
               reply(awikwok)
               break
        case 'mining':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               var mining = randomNomor(1000)
               atm.addKoinUser(sender, mining, _uang)
               await reply(`*Selamat Kamu Mendapatkan*: _Rp ${mining} 💰_`)
               break
        case 'waktu':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               reply(`Waktu Indonesia Barat: *${moment().utcOffset('+0700').format('HH:mm')}* WIB \nWaktu Indonesia Tengah: *${moment().utcOffset('+0800').format('HH:mm')}* WITA \nWaktu Indonesia Timur: *${moment().utcOffset('+0900').format('HH:mm')}* WIT`)
               break
        case 'cekmati':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               if (!q) return reply(mess.wrongFormat)
               predea = await axios.get(`https://api.agify.io/?name=${q}`)
               reply(`Nama : ${predea.data.name}\n*Mati Pada Umur :* ${predea.data.age} Tahun.\n\n_Cepet Cepet Tobat Bro Soalnya Mati ga ada yang tau_`)
               break
        case 'togel':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               reply(mess.wait)
               try {
               dataplai = await axios.get(`https://api.vhtear.com/togel&apikey=${setting.vhtearkey}`)
@@ -4647,20 +4647,20 @@ break
 }
               break
        case 'toxic':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               Toxic().then(toxic => {
               reply (toxic)
 })
               break
         case 'citacita':
-         if (!isRegister) return reply(mess.regits) 
+         //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               const cita =['http://piyobot.000webhostapp.com/citacita1.mp3','http://piyobot.000webhostapp.com/citacita2.mp3','http://piyobot.000webhostapp.com/citacita3.mp3','http://piyobot.000webhostapp.com/citacita4.mp3','http://piyobot.000webhostapp.com/citacita5.mp3','http://piyobot.000webhostapp.com/citacita6.mp3','http://piyobot.000webhostapp.com/citacita7.mp3','http://piyobot.000webhostapp.com/citacita8.mp3','http://piyobot.000webhostapp.com/citacita9.mp3','http://piyobot.000webhostapp.com/citacita10.mp3','http://piyobot.000webhostapp.com/citacita11.mp3','http://piyobot.000webhostapp.com/citacita12.mp3','http://piyobot.000webhostapp.com/citacita13.mp3','http://piyobot.000webhostapp.com/citacita14.mp3','http://piyobot.000webhostapp.com/citacita15.mp3','http://piyobot.000webhostapp.com/citacita16.mp3','http://piyobot.000webhostapp.com/citacita17.mp3','http://piyobot.000webhostapp.com/citacita18.mp3','http://piyobot.000webhostapp.com/citacita19.mp3','http://piyobot.000webhostapp.com/citacita20.mp3','http://piyobot.000webhostapp.com/citacita21.mp3','http://piyobot.000webhostapp.com/citacita22.mp3','http://piyobot.000webhostapp.com/citacita23.mp3','http://piyobot.000webhostapp.com/citacita24.mp3','http://piyobot.000webhostapp.com/citacita25.mp3','http://piyobot.000webhostapp.com/citacita26.mp3','http://piyobot.000webhostapp.com/citacita27.mp3','http://piyobot.000webhostapp.com/citacita28.mp3','http://piyobot.000webhostapp.com/citacita29.mp3','http://piyobot.000webhostapp.com/citacita30.mp3','http://piyobot.000webhostapp.com/citacita31.mp3','http://piyobot.000webhostapp.com/citacita32.mp3','http://piyobot.000webhostapp.com/citacita33.mp3','http://piyobot.000webhostapp.com/citacita34.mp3','http://piyobot.000webhostapp.com/citacita35.mp3']
               const cita3 = cita[Math.floor(Math.random() * cita.length)]
               cita2 = await getBuffer(cita3)
               rzky.sendMessage(from, cita2, audio,{mimetype: 'audio/mp4', ptt:true, quoted: mek})
               break
        case 'apakah':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               apakah = body.slice(1)
               const apa =['Iya','Tidak','Bisa Jadi','Coba Ulangi']
               const kah = apa[Math.floor(Math.random() * apa.length)]
@@ -4668,7 +4668,7 @@ break
               break
        case 'rate':
        case 'nilai':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               rate = body.slice(1)
               const ra =['0','4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
               const te = ra[Math.floor(Math.random() * ra.length)]
@@ -4676,7 +4676,7 @@ break
               break
        case 'gantengcek':
        case 'cekganteng':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               ganteng = body.slice(1)
               const gan =['10','30','20','40','50','60','70','62','74','83','97','100','29','94','75','82','41','39']
               const teng = gan[Math.floor(Math.random() * gan.length)]
@@ -4684,14 +4684,14 @@ break
               break
        case 'cantikcek':
        case 'cekcantik':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               cantik = body.slice(1)
               const can =['10','30','20','40','50','60','70','62','74','83','97','100','29','94','75','82','41','39']
               const tik = can[Math.floor(Math.random() * can.length)]
               rzky.sendMessage(from, '*Pertanyaan :* '+cantik+'\n*Jawaban :* '+ tik+'%', text, { quoted: mek })
               break
        case 'cekwatak':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               var namao = pushname
               var prfx = await rzky.getProfilePicture(sender)
               const watak = ['top deh pokoknya','penyayang','pemurah','Pemarah','Pemaaf','Penurut','Baik','baperan','Baik-Hati','penyabar','UwU','Suka Membantu']
@@ -4709,41 +4709,41 @@ break
               await reply(`[ INTROGASI SUKSES ]\n\n[Nama]:${namao}\n\n[Watak]:${wtk}\n\n[Akhlak✨]:${akhlak}\n\n[Sifat]:${sft}\n\n[Hobby]:${hby}\n\n[Tipe]:${typo}\n\n[Kelebihan]:${klbh}\n\nNote\n\n_ini hanya main main_`)
               break
        case 'hobby':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               hobby = body.slice(1)
               const by = hobby[Math.floor(Math.random() * hobby.length)]
               rzky.sendMessage(from, 'Pertanyaan : *'+hobby+'*\n\nJawaban : '+ by, text, { quoted: mek })
               break
        case 'bisakah':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               bisakah = body.slice(1)
               const bisa =['Bisa','Tidak Bisa','Coba Ulangi','MANA GW TAU']
               const keh = bisa[Math.floor(Math.random() * bisa.length)]
               rzky.sendMessage(from, '*Pertanyaan :* '+bisakah+'\n*Jawaban :* '+ keh, text, { quoted: mek })
               break
        case 'kapankah':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               kapankah = body.slice(1)
               const kapan =['Besok','Lusa','Tadi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi']
               const koh = kapan[Math.floor(Math.random() * kapan.length)]
               rzky.sendMessage(from, '*Pertanyaan :* '+kapankah+'\n*Jawaban :* '+ koh, text, { quoted: mek })
               break
        case 'truth':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               const trut =['Pernah suka sama siapa aja? berapa lama?','Kalau boleh atau kalau mau, di gc/luar gc siapa yang akan kamu jadikan sahabat?(boleh beda/sma jenis)','apa ketakutan terbesar kamu?','pernah suka sama orang dan merasa orang itu suka sama kamu juga?','Siapa nama mantan pacar teman mu yang pernah kamu sukai diam diam?','pernah gak nyuri uang nyokap atau bokap? Alesanya?','hal yang bikin seneng pas lu lagi sedih apa','pernah cinta bertepuk sebelah tangan? kalo pernah sama siapa? rasanya gimana brou?','pernah jadi selingkuhan orang?','hal yang paling ditakutin','siapa orang yang paling berpengaruh kepada kehidupanmu','hal membanggakan apa yang kamu dapatkan di tahun ini','siapa orang yang bisa membuatmu sange','siapa orang yang pernah buatmu sange','(bgi yg muslim) pernah ga solat seharian?','Siapa yang paling mendekati tipe pasangan idealmu di sini','suka mabar(main bareng)sama siapa?','pernah nolak orang? alasannya kenapa?','Sebutkan kejadian yang bikin kamu sakit hati yang masih di inget','pencapaian yang udah didapet apa aja ditahun ini?','kebiasaan terburuk lo pas di sekolah apa?']
               const ttrth = trut[Math.floor(Math.random() * trut.length)]
               truteh = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
               rzky.sendMessage(from, truteh, image, { caption: '*Truth*\n\n'+ ttrth, quoted: mek })
               break
        case 'dare':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "??💨" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
               const der = dare[Math.floor(Math.random() * dare.length)]
               buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
               rzky.sendMessage(from, buffer, image, { quoted: mek, caption: '*Dare*\n\n'+ der })
               break		
        case 'jadian':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               jds = []
               jdii = groupMembers
               koss = groupMembers
@@ -4755,7 +4755,7 @@ break
               mentions(teks, jds, true)
               break
        case 'cantik':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               membr = []
               const mes = groupMembers
               const msk = groupMembers
@@ -4766,7 +4766,7 @@ break
               mentions(teks, membr, true)
               break
        case 'ganteng':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               membr = []
               const nus = groupMembers
               const msl = groupMembers
@@ -4777,7 +4777,7 @@ break
               mentions(teks, membr, true)
               break
        case 'babi':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               membr = []
               const meg = groupMembers
               const mge = groupMembers
@@ -4788,7 +4788,7 @@ break
               mentions(teks, membr, true)
               break
        case 'beban':
-        if (!isRegister) return reply(mess.regits) 
+        //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
               membr = []
               const nge = groupMembers
               const tod = groupMembers
@@ -4850,7 +4850,7 @@ break
              rzky.sendMessage(from, await getBuffer(urlinfo), image, {quoted: mek, caption: thankslort })
              break
 case 'media':
- if (!isRegister) return reply(mess.regits) 
+ //////////////////////////////////////////////////  if (!isRegister) return reply(mess.regits) 
 if (isBan) return reply(mess.ban)
 if (!q) return reply('Urlnya?')
 reply(mess.wait)
