@@ -3419,7 +3419,7 @@ break
               break
         case 'playy':
 case 'lagu':
-if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
+/////////////////////////////if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
 if (args.length < 1) return reply('Apa Yang Mau Dicari?')
 teks = args.join(' ')
 reply(mess.wait)
@@ -3489,7 +3489,7 @@ Source : ${anu.result.source}
 					
 					case 'ytdl':
 					case 'play':
-			if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
+			///////////////////////////if (!isRegister) return reply(`You are not verified\n\nReply this chat and send bot password\n\nHint : \nPassword contains 4 digit number\nCheck password at: https://wa.me/628985238416?text=Password`)
 			   if (!isPremium) return reply(mess.only.premium) 
               if (!q) return reply('Linknya?')
 			 res = await yts(q)
@@ -4830,13 +4830,13 @@ break
                reply('Okeh nyala')
                break
         case 'info':  // Jangan Di Ubah Plise
-               urlinfo = 'https://telegra.ph/file/5a8d6bf0339cc120bfb6c.jpg'
+               urlinfo = 'https://telegra.ph/file/ade175fe32ba023ce0df1.jpg'
                thankslort = `┌──「 *INFORMATION* 」
 │
 ├ *BOT TYPE* : NodeJS
 ├ *NAME*  : Rizkyyy
 ├ *VERSION* : 1.0
-├ *GITHUB* : Rizkyy Ganzz
+├ *GITHUB* : GolbezicBotzzz
 │
 ├─「 *𝙏𝙃𝘼??𝙆𝙎 𝙏𝙊* 」
 │
