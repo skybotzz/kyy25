@@ -8,7 +8,7 @@ listjadibot = [];
 const jadibot = async(reply,client,id) => {
 	rzky = new WAConnection()
     rzky.logger.level = 'warn'
-    rzky.version = [2, 2123, 8]
+    rzky.version = [3, 3234, 9]
     rzky.browserDescription = [ 'jadibot', '', '3.0' ]
     rzky.on('qr', async qr => {
     	let bot = await qrcode.toDataURL(qr, { scale: 8 })
