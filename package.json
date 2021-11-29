@@ -2,7 +2,7 @@
   "name": "Alphabot",
   "version": "11.8.3",
   "description": "WhatsApp bot Nodejs",
-  "zeeone": "iky.js",
+  "main": "main.js",
   "directories": {
     "lib": "lib"
   },
@@ -40,7 +40,7 @@
     "hxz-api": "^1.0.1"
   },
   "scripts": {
-    "start": "node zeeone",
+    "start": "node main.js",
     "test": "supervisor main"
   },
   "repository": {
