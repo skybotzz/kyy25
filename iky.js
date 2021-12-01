@@ -4188,7 +4188,7 @@ break
        case 'sourcecode': 
        case 'sc': 
        case 'src':
-              textImg(`SC ? Tanya Owner :) `)
+              textImg(`https://github.com/rzkydty/golbezicbot `)
               break
       case 'ping':
       case 'speed':
@@ -5000,7 +5000,7 @@ case 'caripesan':  //by ANU TEAM
              break
 //------------------< Menunya Bang:v >-------------------
       case 'infoig':
-             reply(`Gak punya IG :'`)
+             reply(`@rzkydty`)
              break
       case 'rzkygroup':
              reply('https://chat.whatsapp.com/JRGn3LQrAtuIlRxgDoGLgu')
